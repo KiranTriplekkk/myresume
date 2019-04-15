@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <title>Kiran Portfolio</title>
+    <style>
+    body{background:lightgray;font-family: 'Ubuntu', sans-serif;}
+    h1{padding: 30px;animation: jump 5s infinite;font-weight: 700;color: #f02d2d}
+    a{text-decoration: none;}
+    a:hover{text-decoration: none;}
+    .spacer{padding: 50px 0;text-align: center;}
+    .header{background: url('./img/sparks.jpg'),linear-gradient(rgba(13, 216, 57, 0.2),rgba(0,0,0,0.5));animation: moveimg 60s infinite linear;overflow: hidden;background-size: cover;}
+    .header img:nth-child(1){position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);width: 300px;height: 300px;border-radius: 50%;animation: jump 5s infinite;}
+    .header img:nth-child(2){opacity: 0;background-position:center;width: 100%;height: 100vh;background-size: cover;}
+    .about-me{margin: 30px;padding: 30px;webkit-box-shadow: 0 0 5px 2px gray;-moz-box-shadow: 0 0 5px 2px gray;box-shadow: 0 0 5px 2px gray;border-radius: 10px;background: white;}
+    .personal-info{text-align:start;box-shadow: 5px 5px 4px  gray;padding: 30px;margin: 30px;border-radius: 10px;webkit-box-shadow: 0 0 5px 2px gray;-moz-box-shadow: 0 0 5px 2px gray;box-shadow: 0 0 5px 2px gray;background: white;}
+    .personal-info h1{padding: 30px;}
+    .education{webkit-box-shadow: 0 0 5px 2px gray;-moz-box-shadow: 0 0 5px 2px gray;box-shadow: 0 0 5px 2px gray;border-radius: 10px;padding: 30px;margin: 30px;background: white;}
+    .study{padding: 30px;margin: 20px;border-radius: 10px;box-shadow: 2px 2px 5px gray;cursor: pointer;transition: 300ms ease-in-out ;}
+    .study:hover{box-shadow: 5px 5px 10px black;transform:scale(1.01);}
+    .experience{background: white;padding: 30px;margin:20px;}
+
+    @keyframes moveimg{
+        from{background-position: 0,0}
+        to{background-position: 1800px,0}
+    }
+    @keyframes jump{
+        0%{opacity: 0;}
+        25%{opacity: 0.5;}
+        50%{opacity: 1;}
+        70%{opacity: 1;}
+        100%{opacity: 1;}
+    }
+
+    @media (max-width:720px){
+        .header img:nth-child(1){width: 150px;height: 150px;border-radius: 50%;}
+    }
+    @media (max-width:500px){
+        .about-me{margin: 0;padding: 5px}
+        .study{padding: 20px 5px;margin: 0;box-shadow: none;}
+    }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="header">
+                    <img src="./img/myphoto.jpeg">
+                    <img src="./img/sparks.jpg" class="sparks">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Header Ends-->
+    <div class="spacer">
+
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="about-me">
+                    <h1 class="text-center">ABOUT ME</h1>
+                    <P class="study">Hello, I’m Kiran Kumar K, an Web Developer professional based in Bangalore.Seeking a responsible career in an organization where I can utilize my skills, knowledge to work at my level best. To grow with the organization and deliver best possible services. Work hard to achieve the corporate targets and goals keeping in view the corporate mission and vision.</P>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="spacer">
+
+    </div>
+    <div class="container-fluid">
+        <div class="row personal-info">
+            <div class="col-lg-12">
+                    <h1 class="text-center">PERSONAL INFO</h1>
+            </div>
+                    <div class="col-lg-4 offset-lg-1 col-md-6 col-sm-12 col-xs-12">
+                        <div class="study">
+                            <p><b>Full Name</b> : Kiran Kumar K</p>
+                            <p><b>Address </b>: Andhrahalli,Bangalore-91.</p>
+                            <p><b>Email </b>: kiran06021990@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 offset-lg-2 col-md-6 col-sm-12 col-xs-12" >
+                        <div class="study">
+                            <p><b>Birthday</b> : 06 February</p>
+                            <p><b>Phone</b>: +91 9844231023</p>
+                            <p><b>Job </b>: Web Developer</p>
+                        </div>
+                    </div>
+        </div>
+    </div>
+    <div class="spacer">
+
+    </div>
+<!--Personal Info Ends-->
+<div class="container-fluid">
+    <div class="row education text-center">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h1 class="text-center">EDUCATION</h1>
+        </div>
+        
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="study">
+                    <h4>BE IN ECE</h4>
+                    <p>YDIT Bangalore</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="study">
+                    <h4>DIPLOMO IN ECE</h4>
+                    <p>I R Plytechnic Bangalore</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="study">
+                    <h4>SSLC</h4>
+                    <p>St. John’s, Bellary.</p>
+                </div>
+            </div>
+    </div>
+</div>
+    <div class="spacer">
+
+    </div>
+<!--Education Ends-->
+    <div class="conatiner-fluid">
+        <div class="row experience">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h1 class="text-center">WORK EXPERIENCE</h1>
+            </div>
+            <div class="col-lg-5  col-md-6 col-sm-12 col-xs-12">
+                <div class="study text-center">
+                   <a href="http://www.bheledn.com/index.php/en/"><h4>BHEL</h4></a>
+                    <h5>Jan 2017 To Feb 2018</h5>
+                    <p><b>Designation</b>: Internship</p>
+                </div>
+            </div>
+            <div class="col-lg-5 offset-lg-2 col-md-6 col-sm-12 col-xs-12">
+                <div class="study text-center">
+                   <a href="https://likhithcreativelens.com/"><h4>Likhith Creative Lens</h4></a>
+                    <h5>Jan 2017 To Feb 2018</h5>
+                    <p><b>Designation</b>: Wordpress Designer</p>
+                </div>
+            </div>
+            <div class="col-lg-5  col-md-6 col-sm-12 col-xs-12">
+                <div class="study text-center">
+                   <a href="http://essence.healthcare/"><h4>Essence Healthcare</h4></a>
+                    <h5>Feb 2018 To May 2018</h5>
+                    <p><b>Designation</b>: Web Devloper Internship</p>
+                </div>
+            </div>
+            <div class="col-lg-5 offset-lg-2 col-md-6 col-sm-12 col-xs-12">
+                <div class="study text-center">
+                  <a href="https://diggdigital.com/"><h4>DiggDigital</h4></a>
+                    <h5>August 2018 To Present </h5>
+                    <p><b>Designation</b>: Web Developer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div style="padding:400px 0;"
+</body>
+</html>
